@@ -39,7 +39,7 @@
     var points_niu = [
 [120.09984374049316, 30.29547172375213, "星洲小学"],
 [120.10971135702862, 30.29098309350643, "竞舟小学"],
-[120.10850888527294, 30.297014245387018, "翠苑第一小学（文华校区）"]
+[120.10850888527294, 30.297014245387018, "翠苑第一小学（文华校区）"],
 [120.14895329424868, 30.29357641622967, "文一街小学文一校区"],
 [120.15067525608076, 30.28286651643173, "文三教育集团(文三街小学)"],
 [120.15079706630792, 30.287481666623233, "学军小学求智校区"],
@@ -251,7 +251,8 @@
                 const aa = points_fang[i][2]
                 const bb = points_fang[i][3]
                 const cc = points_fang[i][4]
-                const dd = `<div>${aa}</div><div>${bb}</div><div>${cc}</div>`
+                const ee = points_fang[i][5]
+                const dd = `<div>${aa}</div><div>${bb}</div><div>${cc}</div><div>${ee}</div>`
                 var label = new BMap.Label(dd, { offset: new BMap.Size(-30, 25) });
                 marker.setLabel(label); //添加百度label
                 map.addOverlay(marker);
